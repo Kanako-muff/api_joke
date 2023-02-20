@@ -1,0 +1,64 @@
+$font-main: 'Roboto Condensed', sans-serif;
+$font-robotJoke: 'Gajraj One', cursive;
+
+body{
+    background-color: black;
+}
+
+.joke-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+
+    button {
+        z-index: 1;
+        width: 350px;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 50px;
+        border: none;
+        font-size: 200%;
+        font-family: $font-main;
+        letter-spacing: 0.01rem;
+        box-shadow: 0 7px 0 #999;
+
+        &:hover {
+            box-shadow: none;
+            position: relative;
+            top: 7px;
+        }
+
+        &:active {
+            color: #999;
+        }
+    }
+
+    img {
+        width: 50%;
+        position: absolute;
+        top: 8%;
+        left: 21%;
+    }
+
+    span {
+        z-index: 2;
+        position: absolute;
+        top: 63%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 3% 0;
+        color: white;
+        text-align: center;
+        font-family: $font-robotJoke;
+        letter-spacing: 0.1rem;
+        font-size: 200%;
+
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.6px);
+        -webkit-backdrop-filter: blur(9.6px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
